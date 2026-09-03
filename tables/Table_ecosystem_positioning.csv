@@ -1,0 +1,7 @@
+dimension,partition_tools,reporting_norms,benchmark_infrastructure,genomeML_report_card
+Construct group/homology partitions,Yes,No,Often prescribed,No—consumes and audits declared blocks
+Structured label unit + deployment block fields,No,Partial (narrative),Partial,Required validated contract fields
+Explicit claim to metadata column binding,No,Rare,Rare,Yes
+Audit user-supplied split vs declared block,Custom/ad hoc,No,Uncommon,Standardized four-axis rules
+Machine-readable versioned audit object,No,Uncommon,Partial,JSON schema + Markdown report
+CI / benchmark ingestion,Fragmented,No,Platform-specific,Designed for GitHub Actions and repository hooks

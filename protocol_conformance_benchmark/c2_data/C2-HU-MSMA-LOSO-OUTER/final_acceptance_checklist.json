@@ -1,0 +1,13 @@
+{
+  "case_id": "C2-HU-MSMA-LOSO-OUTER",
+  "C1_genome_ML": true,
+  "C2_version_pin": true,
+  "C3_membership": "deterministic_generator_from_frozen_species_files",
+  "C4_unit_to_block": true,
+  "C5_declared_generalization_unit": "species (upstream LOSO outer protocol)",
+  "C6_block_recurrence_zero": true,
+  "C7_joinability": "yes_via_upstream_iso_prefix_adapter_to_author_pheno_tables",
+  "C8_not_our_split": true,
+  "decision": "ACCEPT_as_generator_derived_declared_block_E2E",
+  "date": "2026-09-02"
+}

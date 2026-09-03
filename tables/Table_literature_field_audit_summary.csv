@@ -1,0 +1,10 @@
+metric,value
+n_total,80.0
+n_external,79.0
+n_dual_sample,16.0
+pct_joint_score_4,5.1
+pct_joint_score_0,73.4
+pct_l3_auditable_yes,2.5
+pct_l2_label_yes,21.5
+pct_l2_block_yes,10.1
+mean_joint_score_external,0.53

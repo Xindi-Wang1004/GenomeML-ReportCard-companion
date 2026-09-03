@@ -1,0 +1,5 @@
+declaration_id,deployment_claim,label_unit,deployment_block,n_blocks,contract_status,shared_block_fraction_random,within_block_homogeneity,metric,random,blocked,delta_B,n_warn,n_info,report_json
+Babayan_A_viral_group_holdout,held-out viral phylogenetic/taxonomic group prediction,species,Viral group,12,pass,1.0,0.749,auc,0.809,0.56,0.249,0,2,multi_task_audit/results/dual_declaration/Babayan_A_viral_group_holdout.json
+Babayan_B_species_as_block,sequence-level evaluation on this panel (species mostly singleton),species,species,440,warn,0.0,1.0,auc,0.809,0.814,-0.005,1,0,multi_task_audit/results/dual_declaration/Babayan_B_species_as_block.json
+Hu_A_country_holdout,held-out country AMR surveillance deployment on Hu Pa ceftazidime panel,strain,country,18,pass,0.968,0.789,auc,0.592,0.59,0.002,0,1,multi_task_audit/results/published_audits/Hu_pa_ceftaz_country_reportcard.json
+Hu_B_strain_as_block,sequence/isolate-level evaluation on the same Hu Pa panel,strain,strain,187,warn,0.0,1.0,auc,0.592,0.629,-0.037,1,0,multi_task_audit/results/published_audits/Hu_pa_ceftaz_strain_as_block.json

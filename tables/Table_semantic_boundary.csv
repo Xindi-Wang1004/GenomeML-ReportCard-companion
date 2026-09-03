@@ -1,0 +1,7 @@
+question,example,report_card_role,output
+What future setting is claimed?,"Unseen viral groups",Records declaration (not biologically validated),claim specification
+Which metadata field operationalizes it?,viral_group,Validates field existence / missingness / cardinality,manifest mapping
+Is the field absent from training in each fold?,no viral group in both train and test,Mechanically audits fold-local recurrence,conformant/nonconformant/not_assessable
+Is the block the biologically right abstraction?,Does viral_group capture host-range transfer?,Does not determine; requires external justification,outside automated inference
+Does measured performance predict prospective deployment?,future surveillance cohort,Does not infer,outside scope
+Does random-vs-block difference quantify leakage?,Δ_B = 0.29,Descriptive optional diagnostic only,geometry contrast (not leakage score)

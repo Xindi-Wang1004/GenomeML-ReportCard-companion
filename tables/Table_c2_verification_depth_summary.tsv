@@ -1,0 +1,10 @@
+verification_depth_tier	n_cases	description	example_cases
+artifact_insufficient	4	Artifact insufficient for independent membership audit	Mollentze / Babayan / Engqvist / mouse enhancers
+sequence_membership_conformant	4	Released sequence/interval membership conformance	GenomicBenchmarks sequence holdouts
+fold_membership_without_block_validation	2	Fold membership conformant; declared block rule not assessable	Hu ceftazidime fold JSONs
+claim_recorded_membership_insufficient	1	Claim recorded; fold/block membership unavailable	scRNA donor CV
+cv_membership_complete_no_declared_block	1	Complete membership audit; no declared biological deployment block	ProteinGym DMS CV folds
+declared_block_e2e_direct_release	1	Declared-block E2E from upstream direct membership export	GeneLab mission LOMO
+declared_block_e2e_generator_derived	1	Declared-block E2E from version-pinned upstream deterministic generator	Hu MSMA LOSO outer
+human_sequence_e2e	1	Human coordinate/sequence-level E2E conformance	GB human promoters E2E
+pending_retrieval	1	Retrieval pending	CAMI II

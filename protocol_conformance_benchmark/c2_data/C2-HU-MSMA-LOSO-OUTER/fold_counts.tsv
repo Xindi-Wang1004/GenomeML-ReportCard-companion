@@ -1,0 +1,10 @@
+fold_id	held_out_species	n_train	n_test	accession_overlap	block_recurrence	held_out_in_train
+0	Acinetobacter_baumannii	19846	1143	0	0	False
+1	Campylobacter_jejuni	20594	395	0	0	False
+2	Escherichia_coli	18496	2493	0	0	False
+3	Klebsiella_pneumoniae	19232	1757	0	0	False
+4	Mycobacterium_tuberculosis	15633	5356	0	0	False
+5	Pseudomonas_aeruginosa	20098	891	0	0	False
+6	Salmonella_enterica	19067	1922	0	0	False
+7	Staphylococcus_aureus	18714	2275	0	0	False
+8	Streptococcus_pneumoniae	16232	4757	0	0	False

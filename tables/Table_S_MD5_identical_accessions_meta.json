@@ -1,0 +1,10 @@
+{
+  "n_exact_md5_identical": 111,
+  "n_organism_groups": 9,
+  "criterion": "exact MD5 match of genome sequence content between development and evaluation partitions",
+  "eval_manifest": "processed_test_spillover_overlap_max100_per_org.csv (evaluation cohort; n=632)",
+  "dev_manifest": "processed_ref_train_with_spillover.csv (development/fine-tune pool)",
+  "label_link": "SpillOver Total linked by curated Organism_Name; not Grange et al. 31-factor scoring tables",
+  "source_audit": "Table_R2_internal_402_vs_632_nn.csv (exact_md5_in_dev==True)",
+  "note": "These accessions co-appeared in our sequence-level ML development\u2013evaluation pool; this is not a train/test leak in the original PNAS SpillOver ranking protocol."
+}

@@ -1,0 +1,8 @@
+analysis_id,analysis,table_or_section,deployment_block,declared_contract,purpose,notes
+EMP-OGT,OGT species-aggregated (Table 3 / positive control),Table 3; §2.3,species,species-held-out phenotype prediction (positive control),positive_control,Species-constant labels; Δ_B expected when species recur in random folds.
+EMP-BABAYAN-VG,Babayan viral host — viral-group exclusion,Table 3; §2.3 flagship,viral_group,unseen viral-group generalization,dual_declaration_flagship,Primary illustration that label-assignment unit ≠ deployment block.
+EMP-BABAYAN-SP,Babayan viral host — species exclusion,Table 3 / dual declaration,species,unseen species generalization,dual_declaration,Same data admit a second legitimate contract; species often singleton → weak stress test.
+EMP-HU-COUNTRY,Hu Pa ceftazidime — country-block re-analysis,Table 3,country (BioSample),country-blocked empirical contrast,null_delta_b_contrast,DISTINCT from Hu C2 phylo-fold artifact audit.
+C2-HU-PA-CEFTAZ-PHYLO,Hu Pa ceftazidime — official phylo-fold artifact,Table 5,official fold membership (not independent clade),official phylogeny-aware fold partition,supplied_split_artifact_audit,Fold-membership conformance ≠ independent clade exclusion verification.
+C2-GB-HUMAN_PROMOTERS,GenomicBenchmarks human_nontata_promoters,Table 5,sequence_id,sequence_level_holdout,sequence_level_holdout_audit,Chromosome recurrence supplemental only; not required.
+C2-MOLLENTZE-ZOONOTIC_RANK,Mollentze InfectsHuman / zoonotic_rank,Table 5,paper-defined random holdout workflow,paper_defined_repeated_random_holdout,artifact_sufficiency_audit,"insufficient_split_artifact = auditability, not study invalidity."

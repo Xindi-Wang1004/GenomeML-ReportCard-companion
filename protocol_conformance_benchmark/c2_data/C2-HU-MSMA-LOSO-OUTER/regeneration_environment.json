@@ -1,0 +1,39 @@
+{
+  "regeneration_date": "2026-09-02",
+  "python": "3.9.6 (default, Apr 17 2026, 18:15:52) \n[Clang 21.0.0 (clang-2100.1.1.101)]",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "script": "scripts/regenerate_hu_msma_loso_outer.py",
+  "commit_pinned": "2850078b912483b352f9a355a86a618c3553ca94",
+  "n_genomes": 20989,
+  "n_outer_folds": 9,
+  "input_sha256": {
+    "loo_folds/Acinetobacter_baumannii_KMA_cv.json": "cebe6c2390d7cd4f4e3497ca50a410742e72fd010be9a119204d2cabfb77a2c1",
+    "loo_folds/Campylobacter_jejuni_KMA_cv.json": "0b9a0e24ec61f2949886f69d969a1ad5f84a834a46481287a8fb0c0c22eb3a05",
+    "loo_folds/Escherichia_coli_KMA_cv.json": "98d561005ff6dc1452676877565282b5664834d32abea5ea25107d2fecae210d",
+    "loo_folds/Klebsiella_pneumoniae_KMA_cv.json": "374303a0e35e6ed112c23e393dab11bb7b882bd7310b0260b69dc90c296c551e",
+    "loo_folds/Mycobacterium_tuberculosis_KMA_cv.json": "b5b5b042de2bec1111e003f648334d4a76b342c560692edc9cd86967f0e1cb05",
+    "loo_folds/Pseudomonas_aeruginosa_KMA_cv.json": "b1e40c79c13424d80ca918125b1a896d209eee6157b6e2a7ca884dde5d56d2b7",
+    "loo_folds/Salmonella_enterica_KMA_cv.json": "4b949c285e6fb974f2c0b0064c7f6fb24a437a71ba054ba992298713946e92a7",
+    "loo_folds/Staphylococcus_aureus_KMA_cv.json": "072e8b7b7e2fcafd5af3763706c3dd81b2e9bf5dfe204cf8370d678275b991ce",
+    "loo_folds/Streptococcus_pneumoniae_KMA_cv.json": "3f13d83a685bd53c41509d9bd222b439661ce2e33cc7d6f7508f3316f5077e0e",
+    "phenotypes/Data_Acinetobacter_baumannii_ampicillin_sulbactam_pheno.txt": "a80a97589b5643c9066d2c6a73c102172a2dcad643f9ea01eceb96c4ccae2d17",
+    "phenotypes/Data_Campylobacter_jejuni_tetracycline_pheno.txt": "c1be49519aaec36f8e224ac4abbbf0a82abd2fad5eecf213f14d000b3228d400",
+    "phenotypes/Data_Escherichia_coli_ampicillin_pheno.txt": "5a999fdeab408870f0cc79a7bef4e9d2016ff31e302cc1ba153ba10c04f1bb91",
+    "phenotypes/Data_Klebsiella_pneumoniae_ciprofloxacin_pheno.txt": "6cb098df568268e526e59c93aebd9326065f0d6682b7cf6c675d8054ee6a5523",
+    "phenotypes/Data_Mycobacterium_tuberculosis_isoniazid_pheno.txt": "24a9521432ebb752883e48ee9d566b90e7fd5288d67289bdde84a482a3f8fa0e",
+    "phenotypes/Data_Pseudomonas_aeruginosa_ceftazidime_pheno.txt": "7c73c4ad8f6d6a79f36b5cbe7cfa377a1b911faa54a4bee99b0732d7d44e09d2",
+    "phenotypes/Data_Salmonella_enterica_ampicillin_pheno.txt": "dc142f62f0f39139adf4d863e566bc22e708951d42ab280495ca1d3a08124f6f",
+    "phenotypes/Data_Staphylococcus_aureus_ciprofloxacin_pheno.txt": "b92bf84b107aad793ee0a6a77573b1edf41c4145f974fc869002552c542f44d3",
+    "phenotypes/Data_Streptococcus_pneumoniae_tetracycline_pheno.txt": "648de2c4001cc38b989ac406494b949ab4c21dcf2f04742968c6995430d2e826",
+    "phenotypes/SELECTED_PHENOTYPE_FILES.json": "5e29f8e4555805d8cfbb50edde3f1f15962548370e1e24b03b5608c26f96fc48",
+    "upstream_code/CLAIM_SNIPPET_main_MSMA_concat.py.txt": "44e26b61cb2c08be8a6036742a41c5a89e3081948c30e612f8ab2c16e7d6abac",
+    "upstream_code/CLAIM_SNIPPET_name_utility_LOO.txt": "84d9d6b78a1da97e86fc5866ea410932fd772789fe81ebcb0566a1170fdc66bb",
+    "upstream_code/main_MSMA_concat.py": "4f7b828e5698015ec717210f9df758b256f05e15253be4e04b5e92e74b34fed8",
+    "upstream_code/name_utility.py": "eca3f64ba3515a049453cda771d696956f2d86900ccaf0a3ee3f820ffad205bf"
+  },
+  "output_sha256": {
+    "fold_assignment_regenerated.tsv": "81bf6d7c4777fe62647ac3f0e95c40c8ece06f381ad8cb13c0fbe9d42d96d9d9",
+    "fold_counts.tsv": "9da51b269c66e23416cb932d09ee5bd9339d2319171d51856036ff7513e56e82",
+    "unit_to_block.tsv": "46f388cb5d9e08e45316f1cbd114e287d42123701977864e8eb3037cccc40434"
+  }
+}

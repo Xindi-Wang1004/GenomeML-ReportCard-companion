@@ -1,0 +1,417 @@
+{
+  "case_id": "C2-HU-MSMA-LOSO-OUTER",
+  "audit_date": "2026-09-02",
+  "membership_source": "deterministic_generator",
+  "membership_provenance": "upstream_generator_reproduced",
+  "source_preservation": "reconstructed_from_frozen_upstream_inputs",
+  "generator": {
+    "repo": "https://github.com/hzi-bifo/AMR_benchmarking",
+    "commit_pinned": "2850078b912483b352f9a355a86a618c3553ca94",
+    "entry_point": "AMR_software/AytanAktug/main_MSMA_concat.py",
+    "claim_lines": "219-220 (outer LOSO declaration); 71-72 (hold-out = all samples from a species); 222-254 (species loop)",
+    "verbatim_outer_claim": "Each time set a species out for testing, with the rest species' samples for training.",
+    "path_helper": "src/amr_utility/name_utility.py::GETname_foldsMSMA_concatLOO -> data/PATRIC/cv_folds/{level}/multi_S_LOO_folds/{species}_KMA_cv.json",
+    "reconstruction_form": "secondary_strong: frozen species-specific LOO input files + version-pinned LOSO specification (outer membership not a separately released CSV)",
+    "randomness": "Outer LOSO has no random subsample; held-out species fixed by list_species. Inner homology partitions use seed 42 when regenerating folds (prepare_folders cv,42) but are NOT used to define outer train/test membership audited here.",
+    "paper_vs_code": "Outer LOSO declaration cited from upstream implementation code; Mendeley archive documents nine homology-aware fold sets for evaluating Aytan-Aktug leave-one-species-out cross-species model.",
+    "commit_short": "2850078b9124",
+    "raw_urls": {
+      "main_MSMA_concat.py": "https://raw.githubusercontent.com/hzi-bifo/AMR_benchmarking/2850078b912483b352f9a355a86a618c3553ca94/AMR_software/AytanAktug/main_MSMA_concat.py",
+      "name_utility.py": "https://raw.githubusercontent.com/hzi-bifo/AMR_benchmarking/2850078b912483b352f9a355a86a618c3553ca94/src/amr_utility/name_utility.py",
+      "loo_folds_dir": "https://github.com/hzi-bifo/AMR_benchmarking/tree/2850078b912483b352f9a355a86a618c3553ca94/data/PATRIC/cv_folds/loose/multi_S_LOO_folds"
+    }
+  },
+  "cohort": {
+    "n_eligible_genomes": 20989,
+    "n_outer_folds": 9,
+    "species_blocks": [
+      "Acinetobacter_baumannii",
+      "Campylobacter_jejuni",
+      "Escherichia_coli",
+      "Klebsiella_pneumoniae",
+      "Mycobacterium_tuberculosis",
+      "Pseudomonas_aeruginosa",
+      "Salmonella_enterica",
+      "Staphylococcus_aureus",
+      "Streptococcus_pneumoniae"
+    ],
+    "species_counts": {
+      "Acinetobacter_baumannii": 1143,
+      "Campylobacter_jejuni": 395,
+      "Escherichia_coli": 2493,
+      "Klebsiella_pneumoniae": 1757,
+      "Mycobacterium_tuberculosis": 5356,
+      "Pseudomonas_aeruginosa": 891,
+      "Salmonella_enterica": 1922,
+      "Staphylococcus_aureus": 2275,
+      "Streptococcus_pneumoniae": 4757
+    },
+    "duplicate_genome_ids_across_species_files": 0,
+    "each_genome_exactly_one_outer_test_fold": true,
+    "test_fold_union_covers_eligible_cohort": true,
+    "genomes_appearing_in_multiple_test_folds": {}
+  },
+  "fold_stats": [
+    {
+      "fold_id": 0,
+      "held_out_species": "Acinetobacter_baumannii",
+      "n_train": 19846,
+      "n_test": 1143,
+      "accession_overlap": 0,
+      "train_species": [
+        "Campylobacter_jejuni",
+        "Escherichia_coli",
+        "Klebsiella_pneumoniae",
+        "Mycobacterium_tuberculosis",
+        "Pseudomonas_aeruginosa",
+        "Salmonella_enterica",
+        "Staphylococcus_aureus",
+        "Streptococcus_pneumoniae"
+      ],
+      "test_species": [
+        "Acinetobacter_baumannii"
+      ],
+      "species_block_intersection": [],
+      "held_out_species_in_train": false,
+      "block_recurrence": 0
+    },
+    {
+      "fold_id": 1,
+      "held_out_species": "Campylobacter_jejuni",
+      "n_train": 20594,
+      "n_test": 395,
+      "accession_overlap": 0,
+      "train_species": [
+        "Acinetobacter_baumannii",
+        "Escherichia_coli",
+        "Klebsiella_pneumoniae",
+        "Mycobacterium_tuberculosis",
+        "Pseudomonas_aeruginosa",
+        "Salmonella_enterica",
+        "Staphylococcus_aureus",
+        "Streptococcus_pneumoniae"
+      ],
+      "test_species": [
+        "Campylobacter_jejuni"
+      ],
+      "species_block_intersection": [],
+      "held_out_species_in_train": false,
+      "block_recurrence": 0
+    },
+    {
+      "fold_id": 2,
+      "held_out_species": "Escherichia_coli",
+      "n_train": 18496,
+      "n_test": 2493,
+      "accession_overlap": 0,
+      "train_species": [
+        "Acinetobacter_baumannii",
+        "Campylobacter_jejuni",
+        "Klebsiella_pneumoniae",
+        "Mycobacterium_tuberculosis",
+        "Pseudomonas_aeruginosa",
+        "Salmonella_enterica",
+        "Staphylococcus_aureus",
+        "Streptococcus_pneumoniae"
+      ],
+      "test_species": [
+        "Escherichia_coli"
+      ],
+      "species_block_intersection": [],
+      "held_out_species_in_train": false,
+      "block_recurrence": 0
+    },
+    {
+      "fold_id": 3,
+      "held_out_species": "Klebsiella_pneumoniae",
+      "n_train": 19232,
+      "n_test": 1757,
+      "accession_overlap": 0,
+      "train_species": [
+        "Acinetobacter_baumannii",
+        "Campylobacter_jejuni",
+        "Escherichia_coli",
+        "Mycobacterium_tuberculosis",
+        "Pseudomonas_aeruginosa",
+        "Salmonella_enterica",
+        "Staphylococcus_aureus",
+        "Streptococcus_pneumoniae"
+      ],
+      "test_species": [
+        "Klebsiella_pneumoniae"
+      ],
+      "species_block_intersection": [],
+      "held_out_species_in_train": false,
+      "block_recurrence": 0
+    },
+    {
+      "fold_id": 4,
+      "held_out_species": "Mycobacterium_tuberculosis",
+      "n_train": 15633,
+      "n_test": 5356,
+      "accession_overlap": 0,
+      "train_species": [
+        "Acinetobacter_baumannii",
+        "Campylobacter_jejuni",
+        "Escherichia_coli",
+        "Klebsiella_pneumoniae",
+        "Pseudomonas_aeruginosa",
+        "Salmonella_enterica",
+        "Staphylococcus_aureus",
+        "Streptococcus_pneumoniae"
+      ],
+      "test_species": [
+        "Mycobacterium_tuberculosis"
+      ],
+      "species_block_intersection": [],
+      "held_out_species_in_train": false,
+      "block_recurrence": 0
+    },
+    {
+      "fold_id": 5,
+      "held_out_species": "Pseudomonas_aeruginosa",
+      "n_train": 20098,
+      "n_test": 891,
+      "accession_overlap": 0,
+      "train_species": [
+        "Acinetobacter_baumannii",
+        "Campylobacter_jejuni",
+        "Escherichia_coli",
+        "Klebsiella_pneumoniae",
+        "Mycobacterium_tuberculosis",
+        "Salmonella_enterica",
+        "Staphylococcus_aureus",
+        "Streptococcus_pneumoniae"
+      ],
+      "test_species": [
+        "Pseudomonas_aeruginosa"
+      ],
+      "species_block_intersection": [],
+      "held_out_species_in_train": false,
+      "block_recurrence": 0
+    },
+    {
+      "fold_id": 6,
+      "held_out_species": "Salmonella_enterica",
+      "n_train": 19067,
+      "n_test": 1922,
+      "accession_overlap": 0,
+      "train_species": [
+        "Acinetobacter_baumannii",
+        "Campylobacter_jejuni",
+        "Escherichia_coli",
+        "Klebsiella_pneumoniae",
+        "Mycobacterium_tuberculosis",
+        "Pseudomonas_aeruginosa",
+        "Staphylococcus_aureus",
+        "Streptococcus_pneumoniae"
+      ],
+      "test_species": [
+        "Salmonella_enterica"
+      ],
+      "species_block_intersection": [],
+      "held_out_species_in_train": false,
+      "block_recurrence": 0
+    },
+    {
+      "fold_id": 7,
+      "held_out_species": "Staphylococcus_aureus",
+      "n_train": 18714,
+      "n_test": 2275,
+      "accession_overlap": 0,
+      "train_species": [
+        "Acinetobacter_baumannii",
+        "Campylobacter_jejuni",
+        "Escherichia_coli",
+        "Klebsiella_pneumoniae",
+        "Mycobacterium_tuberculosis",
+        "Pseudomonas_aeruginosa",
+        "Salmonella_enterica",
+        "Streptococcus_pneumoniae"
+      ],
+      "test_species": [
+        "Staphylococcus_aureus"
+      ],
+      "species_block_intersection": [],
+      "held_out_species_in_train": false,
+      "block_recurrence": 0
+    },
+    {
+      "fold_id": 8,
+      "held_out_species": "Streptococcus_pneumoniae",
+      "n_train": 16232,
+      "n_test": 4757,
+      "accession_overlap": 0,
+      "train_species": [
+        "Acinetobacter_baumannii",
+        "Campylobacter_jejuni",
+        "Escherichia_coli",
+        "Klebsiella_pneumoniae",
+        "Mycobacterium_tuberculosis",
+        "Pseudomonas_aeruginosa",
+        "Salmonella_enterica",
+        "Staphylococcus_aureus"
+      ],
+      "test_species": [
+        "Streptococcus_pneumoniae"
+      ],
+      "species_block_intersection": [],
+      "held_out_species_in_train": false,
+      "block_recurrence": 0
+    }
+  ],
+  "conformance": {
+    "all_folds_accession_overlap_zero": true,
+    "all_folds_species_block_recurrence_zero": true,
+    "all_folds_held_out_absent_from_train": true,
+    "membership_integrity_status": "conformant",
+    "declared_block_conformance_status": "conformant",
+    "biological_block_validation_status": "not_independently_verified"
+  },
+  "id_mapping": {
+    "method": "deterministic_strip_iso_prefix",
+    "acceptability": "version_pinned_deterministic_identifier_mapping",
+    "manuscript_phrasing": "upstream fold IDs use iso_<PATRIC_genome_id>; adapter strips the iso_ prefix to join author-released phenotype tables \u2014 not an external PATRIC API reconstruction",
+    "external_api_used": false
+  },
+  "label_joinability": {
+    "scope": "illustrative single-antibiotic phenotype files per species from upstream loose_by_species/",
+    "n_genomes_with_at_least_one_selected_antibiotic_label": 15855,
+    "fraction_of_cohort_with_selected_label": 0.7554,
+    "per_species": {
+      "Acinetobacter_baumannii": {
+        "phenotype_file": "Data_Acinetobacter_baumannii_ampicillin_sulbactam_pheno.txt",
+        "n_fold_genomes": 1143,
+        "n_pheno_rows": 678,
+        "n_joined_via_strip_iso_prefix": 677,
+        "join_rate_vs_fold": 0.5923,
+        "fold_genomes_without_this_antibiotic_label": 466,
+        "pheno_ids_not_in_fold_sample": [
+          "470.2275"
+        ],
+        "note": "Per-antibiotic phenotype is a subset of MSMA multi-antibiotic cohort; iso_ strip is deterministic string adapter from upstream fold ID convention, not external PATRIC API lookup."
+      },
+      "Campylobacter_jejuni": {
+        "phenotype_file": "Data_Campylobacter_jejuni_tetracycline_pheno.txt",
+        "n_fold_genomes": 395,
+        "n_pheno_rows": 395,
+        "n_joined_via_strip_iso_prefix": 395,
+        "join_rate_vs_fold": 1.0,
+        "fold_genomes_without_this_antibiotic_label": 0,
+        "pheno_ids_not_in_fold_sample": [],
+        "note": "Per-antibiotic phenotype is a subset of MSMA multi-antibiotic cohort; iso_ strip is deterministic string adapter from upstream fold ID convention, not external PATRIC API lookup."
+      },
+      "Escherichia_coli": {
+        "phenotype_file": "Data_Escherichia_coli_ampicillin_pheno.txt",
+        "n_fold_genomes": 2493,
+        "n_pheno_rows": 1484,
+        "n_joined_via_strip_iso_prefix": 1484,
+        "join_rate_vs_fold": 0.5953,
+        "fold_genomes_without_this_antibiotic_label": 1009,
+        "pheno_ids_not_in_fold_sample": [],
+        "note": "Per-antibiotic phenotype is a subset of MSMA multi-antibiotic cohort; iso_ strip is deterministic string adapter from upstream fold ID convention, not external PATRIC API lookup."
+      },
+      "Klebsiella_pneumoniae": {
+        "phenotype_file": "Data_Klebsiella_pneumoniae_ciprofloxacin_pheno.txt",
+        "n_fold_genomes": 1757,
+        "n_pheno_rows": 1697,
+        "n_joined_via_strip_iso_prefix": 1697,
+        "join_rate_vs_fold": 0.9659,
+        "fold_genomes_without_this_antibiotic_label": 60,
+        "pheno_ids_not_in_fold_sample": [],
+        "note": "Per-antibiotic phenotype is a subset of MSMA multi-antibiotic cohort; iso_ strip is deterministic string adapter from upstream fold ID convention, not external PATRIC API lookup."
+      },
+      "Mycobacterium_tuberculosis": {
+        "phenotype_file": "Data_Mycobacterium_tuberculosis_isoniazid_pheno.txt",
+        "n_fold_genomes": 5356,
+        "n_pheno_rows": 13071,
+        "n_joined_via_strip_iso_prefix": 5254,
+        "join_rate_vs_fold": 0.981,
+        "fold_genomes_without_this_antibiotic_label": 102,
+        "pheno_ids_not_in_fold_sample": [
+          "1421917.3",
+          "1421918.3",
+          "1421919.3",
+          "1421920.3",
+          "1421921.3",
+          "1421922.3",
+          "1421923.3",
+          "1421924.3",
+          "1421925.3",
+          "1421926.3",
+          "1421927.3",
+          "1421929.3",
+          "1421930.3",
+          "1421931.3",
+          "1421932.3",
+          "1421933.3",
+          "1421934.3",
+          "1421935.3",
+          "1421936.3",
+          "1421938.3"
+        ],
+        "note": "Per-antibiotic phenotype is a subset of MSMA multi-antibiotic cohort; iso_ strip is deterministic string adapter from upstream fold ID convention, not external PATRIC API lookup."
+      },
+      "Pseudomonas_aeruginosa": {
+        "phenotype_file": "Data_Pseudomonas_aeruginosa_ceftazidime_pheno.txt",
+        "n_fold_genomes": 891,
+        "n_pheno_rows": 657,
+        "n_joined_via_strip_iso_prefix": 657,
+        "join_rate_vs_fold": 0.7374,
+        "fold_genomes_without_this_antibiotic_label": 234,
+        "pheno_ids_not_in_fold_sample": [],
+        "note": "Per-antibiotic phenotype is a subset of MSMA multi-antibiotic cohort; iso_ strip is deterministic string adapter from upstream fold ID convention, not external PATRIC API lookup."
+      },
+      "Salmonella_enterica": {
+        "phenotype_file": "Data_Salmonella_enterica_ampicillin_pheno.txt",
+        "n_fold_genomes": 1922,
+        "n_pheno_rows": 1922,
+        "n_joined_via_strip_iso_prefix": 1922,
+        "join_rate_vs_fold": 1.0,
+        "fold_genomes_without_this_antibiotic_label": 0,
+        "pheno_ids_not_in_fold_sample": [],
+        "note": "Per-antibiotic phenotype is a subset of MSMA multi-antibiotic cohort; iso_ strip is deterministic string adapter from upstream fold ID convention, not external PATRIC API lookup."
+      },
+      "Staphylococcus_aureus": {
+        "phenotype_file": "Data_Staphylococcus_aureus_ciprofloxacin_pheno.txt",
+        "n_fold_genomes": 2275,
+        "n_pheno_rows": 1864,
+        "n_joined_via_strip_iso_prefix": 1864,
+        "join_rate_vs_fold": 0.8193,
+        "fold_genomes_without_this_antibiotic_label": 411,
+        "pheno_ids_not_in_fold_sample": [],
+        "note": "Per-antibiotic phenotype is a subset of MSMA multi-antibiotic cohort; iso_ strip is deterministic string adapter from upstream fold ID convention, not external PATRIC API lookup."
+      },
+      "Streptococcus_pneumoniae": {
+        "phenotype_file": "Data_Streptococcus_pneumoniae_tetracycline_pheno.txt",
+        "n_fold_genomes": 4757,
+        "n_pheno_rows": 1905,
+        "n_joined_via_strip_iso_prefix": 1905,
+        "join_rate_vs_fold": 0.4005,
+        "fold_genomes_without_this_antibiotic_label": 2852,
+        "pheno_ids_not_in_fold_sample": [],
+        "note": "Per-antibiotic phenotype is a subset of MSMA multi-antibiotic cohort; iso_ strip is deterministic string adapter from upstream fold ID convention, not external PATRIC API lookup."
+      }
+    },
+    "note": "MSMA-concat is multi-antibiotic; selected single-antibiotic files demonstrate ID joinability, not the full multi-label matrix used in every reported metric."
+  },
+  "species_imbalance": {
+    "description": "Outer test sizes unequal by design (species prevalence); not a failure criterion for declared-block conformance.",
+    "counts": {
+      "Acinetobacter_baumannii": 1143,
+      "Campylobacter_jejuni": 395,
+      "Escherichia_coli": 2493,
+      "Klebsiella_pneumoniae": 1757,
+      "Mycobacterium_tuberculosis": 5356,
+      "Pseudomonas_aeruginosa": 891,
+      "Salmonella_enterica": 1922,
+      "Staphylococcus_aureus": 2275,
+      "Streptococcus_pneumoniae": 4757
+    }
+  },
+  "artifacts": {
+    "fold_assignment_tsv": "protocol_conformance_benchmark/c2_data/C2-HU-MSMA-LOSO-OUTER/processed/fold_assignment_regenerated.tsv",
+    "unit_to_block_tsv": "protocol_conformance_benchmark/c2_data/C2-HU-MSMA-LOSO-OUTER/processed/unit_to_block.tsv",
+    "fold_counts_tsv": "protocol_conformance_benchmark/c2_data/C2-HU-MSMA-LOSO-OUTER/processed/fold_counts.tsv"
+  }
+}
