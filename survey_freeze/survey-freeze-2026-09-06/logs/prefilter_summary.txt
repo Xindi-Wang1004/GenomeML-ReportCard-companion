@@ -1,0 +1,5 @@
+input=3471
+priority>=3: 35
+maybe: 1600
+low_priority: 1836
+Note: title-only heuristic; does NOT replace human inclusion decisions.

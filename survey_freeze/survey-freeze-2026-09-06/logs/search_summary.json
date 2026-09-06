@@ -1,0 +1,21 @@
+{
+  "search_date": "2026-09-05",
+  "database": "Europe PMC",
+  "queries": {
+    "Q1_protocol_broad": {
+      "hitCount": 37340,
+      "retrieved": 2000
+    },
+    "Q2_block_holdout_focus": {
+      "hitCount": 5576,
+      "retrieved": 2000
+    },
+    "Q3_amr_core": {
+      "hitCount": 3072,
+      "retrieved": 2000
+    }
+  },
+  "dedup_all": 4340,
+  "working_queue": 3471,
+  "note": "Primary screen queue = Q2 \u222a Q3 deduped. Q1 logged for sensitivity; if Q1>>Q2, report both."
+}

@@ -1,0 +1,30 @@
+22: YEAR = 'FIRST_PDATE:[2020-01-01 TO 2026-12-31]'
+25:     "Q1_protocol_broad": (
+33:     "Q2_block_holdout_focus": (
+44:     "Q3_amr_core": (
+54: def fetch_page(query: str, cursor: str = "*", page_size: int = 100) -> dict:
+56:         "query": query,
+58:         "pageSize": str(page_size),
+68: def harvest(query_id: str, query: str, max_records: int = 2000) -> tuple[int, list[dict]]:
+72:     while len(rows) < max_records:
+73:         data = fetch_page(query, cursor=cursor)
+75:             hit_count = int(data.get("hitCount") or 0)
+82:                     "query_id": query_id,
+116:         out_json.write_text(json.dumps({"query": q, "hitCount": hit_count, "retrieved": len(rows), "results": rows}, indent=2), encoding="utf-8")
+118:             w = csv.DictWriter(f, fieldnames=list(rows[0].keys()) if rows else ["query_id"])
+122:         log_lines.append(f"{qid}\thitCount={hit_count}\tretrieved={len(rows)}")
+123:         print(f"  hitCount={hit_count} retrieved={len(rows)}")
+129:                 all_by_key[key] = {**r, "query_ids": qid}
+131:                 prev = all_by_key[key]["query_ids"]
+133:                     all_by_key[key]["query_ids"] = prev + "|" + qid
+135:     # Dedup union of Q2+Q3 as working screen set (Q1 may be huge; still logged)
+138:         qids = r.get("query_ids", "")
+139:         if "Q2_" in qids or "Q3_" in qids or qids.startswith("Q2") or "Q2_block" in qids or "Q3_amr" in qids:
+141:         # also include if only in Q1? No — keep Q1 as sensitivity log only for screen file from Q2∪Q3
+142:     # Fix: query_ids format
+143:     working = [r for r in all_by_key.values() if ("Q2_block_holdout_focus" in r["query_ids"] or "Q3_amr_core" in r["query_ids"])]
+153:         "query_ids",
+172:                     "query_ids": r.get("query_ids", ""),
+182:     log_lines.append(f"working_screen_queue_Q2_union_Q3={len(working)}")
+189:                 "queries": {qid: {"hitCount": h, "retrieved": n} for qid, h, n in summary},
+192:                 "note": "Primary screen queue = Q2 ∪ Q3 deduped. Q1 logged for sensitivity; if Q1>>Q2, report both.",

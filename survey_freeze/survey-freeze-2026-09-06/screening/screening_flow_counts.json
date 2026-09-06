@@ -1,0 +1,52 @@
+{
+  "freeze_date": "2026-09-06",
+  "search_date": "2026-09-05",
+  "database": "Europe PMC",
+  "queries": {
+    "Q1_protocol_broad": {
+      "hitCount": 37340,
+      "retrieved_cap": 2000
+    },
+    "Q2_block_holdout_focus": {
+      "hitCount": 5576,
+      "retrieved_cap": 2000
+    },
+    "Q3_amr_core": {
+      "hitCount": 3072,
+      "retrieved_cap": 2000
+    },
+    "Q4_explicit_blocklang_enrichment": {
+      "hitCount": 6718,
+      "retrieved_with_abstracts": 1500
+    }
+  },
+  "dedup_retrieved_Q1Q2Q3": 4340,
+  "working_queue_Q2_union_Q3": 3471,
+  "screening_note": "Human T/A was not completed for all 3471 titles. Deep coding used a block-language enrichment path (Q3 ML abstract filter \u2192 wave3; Q4 explicit-blocklang; plus protocol seeds). Cascade counts below are therefore enrichment-path denominators, not a claim of exhaustive human screening of the full queue.",
+  "title_heuristic_priority_ge3": 35,
+  "title_heuristic_maybe": 1600,
+  "title_heuristic_low": 1836,
+  "Q3_ML_abstract_blocklang_hits": 50,
+  "wave3_fulltext_priority": 12,
+  "wave3_excluded_after_strict_recode": 36,
+  "wave3_strict_claim_yes_rows": 12,
+  "wave3_primary_denominator_eligible_flag_yes": 3,
+  "registry_frozen_n": 14,
+  "primary_AMR_claim_declared_yes_n": 6,
+  "primary_AMR_depth_counts": {
+    "protocol-reconstructed": 1,
+    "not-assessable": 5
+  },
+  "primary_AMR_public_direct_n": 0,
+  "secondary_microbial_genomeML_n": 1,
+  "secondary_depth_counts": {
+    "protocol-reconstructed": 1
+  },
+  "adjacent_direct_membership_n": 1,
+  "allowed_headline": "Among enrichment-path microbial AMR resources with a declared biological block-exclusion claim, linked public fold membership enabling independent direct audit was not observed; most terminated as not-assessable or were protocol-reconstructable only.",
+  "forbidden_headline": "Widespread leakage / block exclusion rarely implemented",
+  "manuscript_date_window": "FIRST_PDATE 2020-01-01 through search freeze 2026-09-05 (manuscript wording); original harvest scripts used TO 2026-12-31 \u2014 treat freeze date as eligibility end for interpretation",
+  "survey_freeze_tag_planned": "survey-freeze-2026-09-06",
+  "companion_demo_commit": "453a8844e2eb",
+  "companion_demo_commit_role": "software-demo assets only; not survey freeze archive"
+}

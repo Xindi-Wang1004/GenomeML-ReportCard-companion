@@ -1,0 +1,9 @@
+evidence_source_id,stratum,verification_depth,main_barrier,doi_or_url
+SEED-HU-AMR-BENCH,AMR_core,protocol-reconstructed,missing_membership_public_release_for_outer_LOSO,10.1093/bib/bbae206
+SEED-BIG-TB,AMR_core,not-assessable,missing_membership_and_phenotype_placeholder,https://github.com/SAGE-Lab-UMass/Big-TB-benchmark
+WAVE2-KLEB-LOCO,AMR_core,not-assessable,missing_membership,10.64898/2026.08.25.747089
+WAVE2-COPYNUM-AMR,AMR_core,not-assessable,inaccessible_data,10.1038/s44259-025-00172-6
+WAVE2-CIPRO-CALIBRATED,AMR_core,not-assessable,missing_membership; no_public_code_or_archive_found_in_PDF,10.21203/rs.3.rs-9230875/v1
+Q4-BIB-BLOCKED,AMR_core,not-assessable,missing_membership,10.1093/bib/bbag451
+Q4-OPERON-LOSO,microbial_genomeML_secondary,protocol-reconstructed,split_applied_at_runtime_via_load_loso_from_serialized; no unit-level fold membership CSV,10.1093/bioadv/vbag140
+ADJ-GENELAB-LOMO,adjacent_transcriptomic_EXCLUDED_PRIMARY,direct-membership,none,https://huggingface.co/datasets/jang1563/genelab-benchmark

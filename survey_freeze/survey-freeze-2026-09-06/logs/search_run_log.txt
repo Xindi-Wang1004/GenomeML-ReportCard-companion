@@ -1,0 +1,7 @@
+search_date=2026-09-05
+database=Europe PMC
+Q1_protocol_broad	hitCount=37340	retrieved=2000
+Q2_block_holdout_focus	hitCount=5576	retrieved=2000
+Q3_amr_core	hitCount=3072	retrieved=2000
+dedup_keys_all_queries=4340
+working_screen_queue_Q2_union_Q3=3471
